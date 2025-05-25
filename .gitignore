@@ -1,0 +1,8 @@
+﻿################################################################################
+# Este arquivo .gitignore foi criado automaticamente pelo Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/Mensageria_Trabalho04
+/obj/Debug
+/packages
+/Mensageria_Trabalho04.csproj
