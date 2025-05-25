@@ -28,7 +28,7 @@ namespace Mensageria_Trabalho04
                     durable: true);
             });
 
-            var message = JsonSerializer.Serialize(evento);
+            var message = JsonConvert.SerializeObject(evento);
             var body = Encoding.UTF8.GetBytes(message);
 
             var routingKey = $"evento.{evento.GeneroMusical.ToLower()}";
