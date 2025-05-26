@@ -11,15 +11,15 @@ public class RabbitMQConnection
         _connection = connection;
     }
 
-    public static async Task<RabbitMQConnection> CreateAsync(string hostName = "localhost")
+    public static async Task<RabbitMQConnection> CreateAsync()
     {
         var factory = new ConnectionFactory()
         {
-            HostName = hostName,
+            HostName = "localhost",
             Port = 5672,
             UserName = "guest",
             Password = "guest",
-            DispatchConsumersAsync = true // Fundamental para consumidores assíncronos
+            DispatchConsumersAsync = true
         };
 
         var connection = factory.CreateConnection();

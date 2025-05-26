@@ -32,17 +32,17 @@ namespace Mensageria_Trabalho04
         {
             // Simulação - na prática, buscaria de um banco de dados
             return new List<Usuario>
-        {
-            new Usuario { Id = 1, Nome = "Fã de " + genero, Email = $"fa1@{genero}.com" },
-            new Usuario { Id = 2, Nome = "Outro fã de " + genero, Email = $"fa2@{genero}.com" }
-        };
+            {
+                new Usuario { Id = 1, Nome = "Fã de " + genero, Email = $"fa1@{genero}.com" },
+                new Usuario { Id = 2, Nome = "Outro fã de " + genero, Email = $"fa2@{genero}.com" }
+            };
         }
 
         private void EnviarNotificacao(Usuario usuario, EventoMusical evento)
         {
             using (var canal = _rabbitConnection.CriarCanal())
             {
-                var exchangeNome = $"notificacoes.{evento.GeneroMusical.ToLower()}";
+                var exchangeNome = $"evento.{evento.GeneroMusical.ToLower()}";
 
                 // Cria um exchange do tipo 'fanout' (envia para todas as filas associadas)
                 canal.ExchangeDeclare(exchangeNome, ExchangeType.Fanout, durable: true);
