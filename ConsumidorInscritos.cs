@@ -37,27 +37,28 @@ namespace Mensageria_Trabalho04
             // Alteração crucial: Usar EventingBasicConsumer para handlers síncronos
             var consumidor = new AsyncEventingBasicConsumer(canal); // ← Tipo correto para sincronia
 
-            consumidor.Received += async (model, ea) =>
+            consumidor.Received += (model, ea) =>
             {
-            try
-            {
-                var corpo = ea.Body.ToArray();
-                var mensagem = Encoding.UTF8.GetString(corpo);
-                var evento = JsonConvert.DeserializeObject<EventoMusical>(mensagem);
+                try
+                {
+                    var corpo = ea.Body.ToArray();
+                    var mensagem = Encoding.UTF8.GetString(corpo);
+                    var evento = JsonConvert.DeserializeObject<EventoMusical>(mensagem);
 
-                Console.WriteLine($" [x] Novo evento recebido: {evento}");
+                    Console.WriteLine($" [x] Novo evento recebido: {evento}");
 
-                // Processamento assíncrono (se necessário)
-                _servicoNotificacao.ProcessarNotificacoes(evento);
+                    _servicoNotificacao.ProcessarNotificacoes(evento);
 
-                canal.BasicAck(ea.DeliveryTag, false);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($" [x] Erro: {ex.Message}");
-                canal.BasicNack(ea.DeliveryTag, false, true);
-            }
-        };
+                    canal.BasicAck(ea.DeliveryTag, false);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($" [x] Erro: {ex.Message}");
+                    canal.BasicNack(ea.DeliveryTag, false, true);
+                }
+
+                return Task.CompletedTask;
+            };
 
             canal.BasicConsume(
                 queue: nomeFila,

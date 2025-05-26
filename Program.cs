@@ -31,9 +31,6 @@ namespace Mensageria_Trabalho04
                 // Menu interativo
                 while (true)
                 {
-                    //Console.WriteLine("\n1 - Publicar evento de Rock");
-                    //Console.WriteLine("2 - Publicar evento de Pop");
-                    //Console.WriteLine("3 - Publicar evento de Sertanejo");
                     int index = 1;
                     generos.ForEach(genero =>
                     {
