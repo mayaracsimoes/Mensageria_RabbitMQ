@@ -5,7 +5,9 @@ VisualStudioVersion = 17.11.35222.181
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mensageria_Trabalho04", "Mensageria_Trabalho04.csproj", "{1BB3A8B9-8E12-4486-B1EA-A7E5DB82958D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MensageriaRabbitMQ", "..\..\..\..\Users\GabrielCardoso\source\repos\MensageriaRabbirMQ\MensageriaRabbitMQ.csproj", "{7BCA1471-FEEA-4892-A5F8-B0C21CE647ED}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MensageriaRabbirMQ", "MensageriaRabbirMQ", "{C7D8C89A-15C8-5882-322E-56FE2FE47810}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MensageriaRabbitMQ", "MensageriaRabbirMQ\MensageriaRabbitMQ.csproj", "{05788392-543C-4502-9023-D8805B8CDF1A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,21 +31,24 @@ Global
 		{1BB3A8B9-8E12-4486-B1EA-A7E5DB82958D}.Release|x64.Build.0 = Release|Any CPU
 		{1BB3A8B9-8E12-4486-B1EA-A7E5DB82958D}.Release|x86.ActiveCfg = Release|Any CPU
 		{1BB3A8B9-8E12-4486-B1EA-A7E5DB82958D}.Release|x86.Build.0 = Release|Any CPU
-		{7BCA1471-FEEA-4892-A5F8-B0C21CE647ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7BCA1471-FEEA-4892-A5F8-B0C21CE647ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7BCA1471-FEEA-4892-A5F8-B0C21CE647ED}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{7BCA1471-FEEA-4892-A5F8-B0C21CE647ED}.Debug|x64.Build.0 = Debug|Any CPU
-		{7BCA1471-FEEA-4892-A5F8-B0C21CE647ED}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{7BCA1471-FEEA-4892-A5F8-B0C21CE647ED}.Debug|x86.Build.0 = Debug|Any CPU
-		{7BCA1471-FEEA-4892-A5F8-B0C21CE647ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7BCA1471-FEEA-4892-A5F8-B0C21CE647ED}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7BCA1471-FEEA-4892-A5F8-B0C21CE647ED}.Release|x64.ActiveCfg = Release|Any CPU
-		{7BCA1471-FEEA-4892-A5F8-B0C21CE647ED}.Release|x64.Build.0 = Release|Any CPU
-		{7BCA1471-FEEA-4892-A5F8-B0C21CE647ED}.Release|x86.ActiveCfg = Release|Any CPU
-		{7BCA1471-FEEA-4892-A5F8-B0C21CE647ED}.Release|x86.Build.0 = Release|Any CPU
+		{05788392-543C-4502-9023-D8805B8CDF1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05788392-543C-4502-9023-D8805B8CDF1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05788392-543C-4502-9023-D8805B8CDF1A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{05788392-543C-4502-9023-D8805B8CDF1A}.Debug|x64.Build.0 = Debug|Any CPU
+		{05788392-543C-4502-9023-D8805B8CDF1A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{05788392-543C-4502-9023-D8805B8CDF1A}.Debug|x86.Build.0 = Debug|Any CPU
+		{05788392-543C-4502-9023-D8805B8CDF1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05788392-543C-4502-9023-D8805B8CDF1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05788392-543C-4502-9023-D8805B8CDF1A}.Release|x64.ActiveCfg = Release|Any CPU
+		{05788392-543C-4502-9023-D8805B8CDF1A}.Release|x64.Build.0 = Release|Any CPU
+		{05788392-543C-4502-9023-D8805B8CDF1A}.Release|x86.ActiveCfg = Release|Any CPU
+		{05788392-543C-4502-9023-D8805B8CDF1A}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{05788392-543C-4502-9023-D8805B8CDF1A} = {C7D8C89A-15C8-5882-322E-56FE2FE47810}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EE98499D-481B-4CC2-A026-AA2210E06123}

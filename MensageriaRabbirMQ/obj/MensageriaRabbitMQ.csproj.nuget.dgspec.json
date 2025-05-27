@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\GabrielCardoso\\source\\repos\\MensageriaRabbirMQ\\MensageriaRabbitMQ.csproj": {}
+    "C:\\temp\\SistemasDistribuidos\\RabbitMQ\\A\\MensageriaRabbirMQ\\MensageriaRabbitMQ.csproj": {}
   },
   "projects": {
-    "C:\\Users\\GabrielCardoso\\source\\repos\\MensageriaRabbirMQ\\MensageriaRabbitMQ.csproj": {
+    "C:\\temp\\SistemasDistribuidos\\RabbitMQ\\A\\MensageriaRabbirMQ\\MensageriaRabbitMQ.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\GabrielCardoso\\source\\repos\\MensageriaRabbirMQ\\MensageriaRabbitMQ.csproj",
+        "projectUniqueName": "C:\\temp\\SistemasDistribuidos\\RabbitMQ\\A\\MensageriaRabbirMQ\\MensageriaRabbitMQ.csproj",
         "projectName": "MensageriaRabbitMQ",
-        "projectPath": "C:\\Users\\GabrielCardoso\\source\\repos\\MensageriaRabbirMQ\\MensageriaRabbitMQ.csproj",
+        "projectPath": "C:\\temp\\SistemasDistribuidos\\RabbitMQ\\A\\MensageriaRabbirMQ\\MensageriaRabbitMQ.csproj",
         "packagesPath": "C:\\Users\\GabrielCardoso\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\GabrielCardoso\\source\\repos\\MensageriaRabbirMQ\\obj\\",
+        "outputPath": "C:\\temp\\SistemasDistribuidos\\RabbitMQ\\A\\MensageriaRabbirMQ\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
