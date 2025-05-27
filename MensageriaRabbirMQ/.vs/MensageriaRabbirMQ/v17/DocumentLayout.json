@@ -1,0 +1,118 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\GabrielCardoso\\source\\repos\\MensageriaRabbirMQ\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5E7A2229-610C-44CA-9909-B4C0120E5F43}|MensageriaRabbirMQ.csproj|c:\\users\\gabrielcardoso\\source\\repos\\mensageriarabbirmq\\serviconotificacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E7A2229-610C-44CA-9909-B4C0120E5F43}|MensageriaRabbirMQ.csproj|solutionrelative:serviconotificacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E7A2229-610C-44CA-9909-B4C0120E5F43}|MensageriaRabbirMQ.csproj|c:\\users\\gabrielcardoso\\source\\repos\\mensageriarabbirmq\\rabbitmqconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E7A2229-610C-44CA-9909-B4C0120E5F43}|MensageriaRabbirMQ.csproj|solutionrelative:rabbitmqconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E7A2229-610C-44CA-9909-B4C0120E5F43}|MensageriaRabbirMQ.csproj|c:\\users\\gabrielcardoso\\source\\repos\\mensageriarabbirmq\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E7A2229-610C-44CA-9909-B4C0120E5F43}|MensageriaRabbirMQ.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E7A2229-610C-44CA-9909-B4C0120E5F43}|MensageriaRabbirMQ.csproj|c:\\users\\gabrielcardoso\\source\\repos\\mensageriarabbirmq\\produtoreventos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E7A2229-610C-44CA-9909-B4C0120E5F43}|MensageriaRabbirMQ.csproj|solutionrelative:produtoreventos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E7A2229-610C-44CA-9909-B4C0120E5F43}|MensageriaRabbirMQ.csproj|c:\\users\\gabrielcardoso\\source\\repos\\mensageriarabbirmq\\consumidorinscritos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E7A2229-610C-44CA-9909-B4C0120E5F43}|MensageriaRabbirMQ.csproj|solutionrelative:consumidorinscritos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E7A2229-610C-44CA-9909-B4C0120E5F43}|MensageriaRabbirMQ.csproj|c:\\users\\gabrielcardoso\\source\\repos\\mensageriarabbirmq\\eventomusical.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E7A2229-610C-44CA-9909-B4C0120E5F43}|MensageriaRabbirMQ.csproj|solutionrelative:eventomusical.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ServicoNotificacao.cs",
+              "DocumentMoniker": "C:\\Users\\GabrielCardoso\\source\\repos\\MensageriaRabbirMQ\\ServicoNotificacao.cs",
+              "RelativeDocumentMoniker": "ServicoNotificacao.cs",
+              "ToolTip": "C:\\Users\\GabrielCardoso\\source\\repos\\MensageriaRabbirMQ\\ServicoNotificacao.cs",
+              "RelativeToolTip": "ServicoNotificacao.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T00:01:22.323Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RabbitMQConnection.cs",
+              "DocumentMoniker": "C:\\Users\\GabrielCardoso\\source\\repos\\MensageriaRabbirMQ\\RabbitMQConnection.cs",
+              "RelativeDocumentMoniker": "RabbitMQConnection.cs",
+              "ToolTip": "C:\\Users\\GabrielCardoso\\source\\repos\\MensageriaRabbirMQ\\RabbitMQConnection.cs",
+              "RelativeToolTip": "RabbitMQConnection.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAwBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T23:34:50.017Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EventoMusical.cs",
+              "DocumentMoniker": "C:\\Users\\GabrielCardoso\\source\\repos\\MensageriaRabbirMQ\\EventoMusical.cs",
+              "RelativeDocumentMoniker": "EventoMusical.cs",
+              "ToolTip": "C:\\Users\\GabrielCardoso\\source\\repos\\MensageriaRabbirMQ\\EventoMusical.cs",
+              "RelativeToolTip": "EventoMusical.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T23:34:12.815Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ConsumidorInscritos.cs",
+              "DocumentMoniker": "C:\\Users\\GabrielCardoso\\source\\repos\\MensageriaRabbirMQ\\ConsumidorInscritos.cs",
+              "RelativeDocumentMoniker": "ConsumidorInscritos.cs",
+              "ToolTip": "C:\\Users\\GabrielCardoso\\source\\repos\\MensageriaRabbirMQ\\ConsumidorInscritos.cs",
+              "RelativeToolTip": "ConsumidorInscritos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T23:34:01.935Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProdutorEventos.cs",
+              "DocumentMoniker": "C:\\Users\\GabrielCardoso\\source\\repos\\MensageriaRabbirMQ\\ProdutorEventos.cs",
+              "RelativeDocumentMoniker": "ProdutorEventos.cs",
+              "ToolTip": "C:\\Users\\GabrielCardoso\\source\\repos\\MensageriaRabbirMQ\\ProdutorEventos.cs",
+              "RelativeToolTip": "ProdutorEventos.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwCMAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T23:32:41.858Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\GabrielCardoso\\source\\repos\\MensageriaRabbirMQ\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\GabrielCardoso\\source\\repos\\MensageriaRabbirMQ\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAgwEwAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T23:30:36.778Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

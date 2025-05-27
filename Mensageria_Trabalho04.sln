@@ -5,7 +5,7 @@ VisualStudioVersion = 17.11.35222.181
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mensageria_Trabalho04", "Mensageria_Trabalho04.csproj", "{1BB3A8B9-8E12-4486-B1EA-A7E5DB82958D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MensageriaRabbirMQ", "..\..\..\..\Users\GabrielCardoso\source\repos\MensageriaRabbirMQ\MensageriaRabbirMQ.csproj", "{7BCA1471-FEEA-4892-A5F8-B0C21CE647ED}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MensageriaRabbitMQ", "..\..\..\..\Users\GabrielCardoso\source\repos\MensageriaRabbirMQ\MensageriaRabbitMQ.csproj", "{7BCA1471-FEEA-4892-A5F8-B0C21CE647ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
