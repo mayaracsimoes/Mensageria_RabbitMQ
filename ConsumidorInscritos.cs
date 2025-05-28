@@ -10,21 +10,19 @@ namespace Mensageria_Trabalho04
 
     public class ConsumidorInscritos
     {
-        private readonly RabbitMQConnection _rabbitConnection;
         private readonly ServicoNotificacao _servicoNotificacao;
         private readonly String _genero;
+        private IModel canal;
 
         public ConsumidorInscritos(RabbitMQConnection rabbitConnection, ServicoNotificacao servicoNotificacao, string genero)
         {
-            _rabbitConnection = rabbitConnection;
+            canal = rabbitConnection.CriarCanal();
             _servicoNotificacao = servicoNotificacao;
             _genero = genero.ToLower();
         }
 
         public void Iniciar()
         {
-            var canal = _rabbitConnection.CriarCanal();
-
             // Configuração da exchange e fila (mantida igual)
             canal.ExchangeDeclare("eventos.musicais.topic", ExchangeType.Topic, durable: true);
             var nomeFila = canal.QueueDeclare().QueueName;

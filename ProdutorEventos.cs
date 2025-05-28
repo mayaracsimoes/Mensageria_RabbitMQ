@@ -8,23 +8,21 @@ namespace Mensageria_Trabalho04
 {
     public class ProdutorEventos
     {
-        private readonly RabbitMQConnection _rabbitConnection;
         private const string ExchangeName = "eventos.musicais.topic";
+        private IModel channel;
 
         public ProdutorEventos(RabbitMQConnection rabbitConnection)
         {
-            _rabbitConnection = rabbitConnection;
+            channel = rabbitConnection.CreateChannelAsync().Result;
         }
 
         public async Task PublicarEventoAsync(EventoMusical evento)
         {
-            var channel = await _rabbitConnection.CreateChannelAsync();
-
             await Task.Run(() =>
             {
                 channel.ExchangeDeclare(
                     exchange: ExchangeName,
-                    type: ExchangeType.Topic,
+                    type: ExchangeType.Direct,
                     durable: true);
             });
 

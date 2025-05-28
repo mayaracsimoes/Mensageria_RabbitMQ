@@ -3,6 +3,8 @@
 public class RabbitMQConnection
 {
     private readonly IConnection _connection;
+    private IChannel _sharedChannel;
+
 
     private RabbitMQConnection(IConnection connection)
     {
@@ -30,7 +32,9 @@ public class RabbitMQConnection
 
     public IChannel CriarCanal()
     {
-        return _connection.CreateChannelAsync().Result;
+        if (_sharedChannel == null || _sharedChannel.IsClosed)
+            _sharedChannel = CreateChannelAsync().Result;
+        return _sharedChannel;
     }
 
     public async ValueTask DisposeAsync()

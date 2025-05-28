@@ -6,11 +6,12 @@ namespace Mensageria_Trabalho04
 {
     public class ServicoNotificacao
     {
-        private readonly RabbitMQConnection _rabbitConnection;
+        private IChannel _channel;
 
         public ServicoNotificacao(RabbitMQConnection rabbitConnection)
         {
-            _rabbitConnection = rabbitConnection;
+            _channel = rabbitConnection.CriarCanal();
+            _channel.ExchangeDeclareAsync("notificacao.*", ExchangeType.Fanout, durable: true);
         }
 
         public void ProcessarNotificacoes(EventoMusical evento)
@@ -36,34 +37,30 @@ namespace Mensageria_Trabalho04
 
         private void EnviarNotificacao(Usuario usuario, EventoMusical evento)
         {
-            using (var canal = _rabbitConnection.CriarCanal())
+            var exchangeNome = $"notificacao.{evento.GeneroMusical.ToLower()}";
+
+            // Cria um exchange do tipo 'fanout' (envia para todas as filas associadas)
+
+            var notificacao = new
             {
-                var exchangeNome = $"evento.{evento.GeneroMusical.ToLower()}";
+                Usuario = usuario,
+                Evento = evento,
+                DataEnvio = DateTime.Now
+            };
 
-                // Cria um exchange do tipo 'fanout' (envia para todas as filas associadas)
-                canal.ExchangeDeclareAsync(exchangeNome, ExchangeType.Fanout, durable: true);
+            var mensagem = JsonConvert.SerializeObject(notificacao);
+            var corpo = Encoding.UTF8.GetBytes(mensagem);
 
-                var notificacao = new
-                {
-                    Usuario = usuario,
-                    Evento = evento,
-                    DataEnvio = DateTime.Now
-                };
+            _channel.BasicPublishAsync(
+                exchange: exchangeNome,
+                routingKey: "",
+                mandatory: true,
+                body: new ReadOnlyMemory<byte>(corpo),
+                basicProperties: new BasicProperties(),
+                cancellationToken: default
+            );
 
-                var mensagem = JsonConvert.SerializeObject(notificacao);
-                var corpo = Encoding.UTF8.GetBytes(mensagem);
-
-                canal.BasicPublishAsync(
-                   exchange: exchangeNome,
-                   routingKey: "",
-                   mandatory: true,
-                   body: new ReadOnlyMemory<byte>(corpo),
-                   basicProperties: new BasicProperties(),
-                   cancellationToken: default
-               );
-
-                Console.WriteLine($" [x] Notificação enviada para {usuario.Nome} sobre {evento.NomeArtista}");
-            }
+            Console.WriteLine($" [x] Notificação enviada para {usuario.Nome} sobre {evento.NomeArtista}");
         }
     }
 

@@ -46,6 +46,7 @@
                     {
                         await produtorEventos.PublicarEventoAsync(novoEvento);
                     }
+                    Thread.Sleep(3000);
                 }
 
                 Console.WriteLine("Finalizando consumidores...");
